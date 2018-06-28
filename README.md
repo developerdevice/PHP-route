@@ -18,9 +18,9 @@ Put the code below in your file .php
     
 To every created router you need re-execute the router as you seen above. The next example show how you can use regex pattern.
 
-use \Src\Core\Router;
+        use \Src\Core\Router;
 
-Router::route("/(\w+)/", function($id){	
-  echo 'My id is: {$id}';
-});
-Router::execute($_SERVER['REQUEST_URI']);
+        Router::route("/(\w+)/", function($id){	
+          echo 'My id is: {$id}';
+        });
+        Router::execute($_SERVER['REQUEST_URI']);
